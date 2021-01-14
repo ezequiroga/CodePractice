@@ -17,6 +17,7 @@ import java.util.HashMap;
  */
 public class IQ_1_4_PalindromePermutation {
 
+    //My Solution
     public boolean isPalindromePermutation(String s) {
         char[] sChar = s.toLowerCase().toCharArray();
 

@@ -24,6 +24,7 @@ public class IQ_1_3_URLify {
      * @param trueLength
      * @return 
      */
+    //My Solution
     public String urLify(char[] str, int trueLength){
         int lastChar = 0;
         for(int i = str.length-1; i>=0; i--){

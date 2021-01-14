@@ -19,6 +19,7 @@ import java.util.HashSet;
  */
 public class IQ_1_1_IsUnique {
     
+    //My Solution
     public boolean isUnique1(String s){        
         HashSet<Character> sChar = new HashSet<>();
         char[] sArray = s.toCharArray();
@@ -35,6 +36,7 @@ public class IQ_1_1_IsUnique {
         
     }
     
+    //My Solution
     public boolean isUnique2(String s){
         char[] sChar = s.toCharArray();
         
