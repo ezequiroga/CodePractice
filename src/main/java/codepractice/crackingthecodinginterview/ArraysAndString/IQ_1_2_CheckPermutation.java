@@ -17,6 +17,7 @@ package codepractice.crackingthecodinginterview.ArraysAndString;
  */
 public class IQ_1_2_CheckPermutation {
     
+    //My Solution
     public boolean checkPerutationSortingString(String s, String t){
         if (s.length() != t.length()){
             return false;
