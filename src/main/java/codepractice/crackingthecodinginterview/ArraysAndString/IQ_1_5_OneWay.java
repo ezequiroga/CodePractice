@@ -1,8 +1,5 @@
 package codepractice.crackingthecodinginterview.ArraysAndString;
 
-import java.util.Arrays;
-import java.util.List;
-
 /**
  * There are three types of edits that can be performed on strings: insert a
  * character, remove a character, or replace a character. Given two strings,
