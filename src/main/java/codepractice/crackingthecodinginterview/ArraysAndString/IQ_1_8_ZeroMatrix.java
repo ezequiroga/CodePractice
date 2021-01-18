@@ -12,16 +12,14 @@ public class IQ_1_8_ZeroMatrix {
         int m = matrix.length;
         int n = matrix[0].length;
         
-        int[][] mWithZeros = matrix;
-        
         for(int i = 0; i<m; i++){
             for(int j=0; j<n; j++){
                 if (matrix[i][j] == 0){
-                    mWithZeros = zeroRowCol(mWithZeros,i,j,m,n);
+                    matrix = zeroRowCol(matrix,i,j,m,n);
                 }
             }
         }
-        return mWithZeros;
+        return matrix;
     }
     
     private int[][] zeroRowCol(int[][] mat, int row, int col, int m, int n){
