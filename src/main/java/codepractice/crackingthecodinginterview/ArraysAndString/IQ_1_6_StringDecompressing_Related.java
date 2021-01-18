@@ -5,7 +5,7 @@ package codepractice.crackingthecodinginterview.ArraysAndString;
  *
  * @author ae_qu
  */
-public class IQ_1_6_Related_StringDecompressing {
+public class IQ_1_6_StringDecompressing_Related {
 
     public String decompressing(String s){
         
