@@ -27,5 +27,16 @@ public class IQ_1_9_StringRotationTest {
         boolean result = instance.isStringRotation(s1, s2);
         assertEquals(expResult, result);
     }
+
+    @Test
+    public void testIsRotation() {
+        System.out.println("isStringRotation");
+        String s1 = "erbottlewat";
+        String s2 = "waterbottle";
+        IQ_1_9_StringRotation instance = new IQ_1_9_StringRotation();
+        boolean expResult = true;
+        boolean result = instance.isRotation(s1, s2);
+        assertEquals(expResult, result);
+    }
     
 }

@@ -10,10 +10,18 @@ package codepractice.crackingthecodinginterview.ArraysAndString;
  */
 public class IQ_1_9_StringRotation {
     
+    /**
+     * My solution needs to check same length and not being empty strings. 
+     * Furthermore, if a char after the rotation point it isn't in the other
+     * string, my solution will return true thought it would be false.
+     * 
+     * 
+     * @param s1
+     * @param s2
+     * @return 
+     */
     public boolean isStringRotation(String s1, String s2){
         char lastCharS1 = s1.charAt(s1.length()-1);
-        
-        System.out.println("lastCharS1: " + lastCharS1);
         
         int idx = s1.indexOf(lastCharS1);
         
@@ -22,6 +30,26 @@ public class IQ_1_9_StringRotation {
     
     private boolean isSubstring(String s1, String s2){
         return s1.contains(s2);
+    }
+    
+    /**
+     * Solution after check the book solution.
+     * 
+     * @param s1
+     * @param s2
+     * @return 
+     */
+    public boolean isRotation(String s1, String s2){
+        
+        if (s1.isEmpty() || s2.isEmpty() || s1.length() != s2.length()){
+            return false;
+        }
+        
+        char lastCharS1 = s1.charAt(s1.length()-1);
+        
+        int idx = s1.indexOf(lastCharS1);
+        
+        return isSubstring(s1, s2.substring(idx-1)+s2.substring(0, idx-1));
     }
     
 }
