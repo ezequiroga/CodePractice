@@ -1,4 +1,4 @@
-package codepractice.crackingthecodinginterview.ArraysAndString;
+package codepractice.crackingthecodinginterview.IX_1.ArraysAndString;
 
 /**
  * There are three types of edits that can be performed on strings: insert a

@@ -1,4 +1,4 @@
-package codepractice.crackingthecodinginterview.ArraysAndString;
+package codepractice.crackingthecodinginterview.IX_1.ArraysAndString;
 
 /**
  * Given two strings, write a method to decide if one is a permutation of the

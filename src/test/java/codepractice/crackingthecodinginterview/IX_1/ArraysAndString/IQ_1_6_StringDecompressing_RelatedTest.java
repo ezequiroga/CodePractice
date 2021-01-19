@@ -1,5 +1,6 @@
-package codepractice.crackingthecodinginterview.ArraysAndString;
+package codepractice.crackingthecodinginterview.IX_1.ArraysAndString;
 
+import codepractice.crackingthecodinginterview.IX_1.ArraysAndString.IQ_1_6_StringDecompressing_Related;
 import org.junit.Test;
 import static org.junit.Assert.*;
 

@@ -1,4 +1,4 @@
-package codepractice.crackingthecodinginterview.ArraysAndString;
+package codepractice.crackingthecodinginterview.IX_1.ArraysAndString;
 
 /**
  * From a2blc5a3 to aabcccccaaa

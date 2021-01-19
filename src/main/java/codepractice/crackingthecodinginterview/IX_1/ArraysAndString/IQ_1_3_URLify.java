@@ -1,4 +1,4 @@
-package codepractice.crackingthecodinginterview.ArraysAndString;
+package codepractice.crackingthecodinginterview.IX_1.ArraysAndString;
 
 /**
  * Write a method to replace all spaces in a string with '%20'. You may assume
