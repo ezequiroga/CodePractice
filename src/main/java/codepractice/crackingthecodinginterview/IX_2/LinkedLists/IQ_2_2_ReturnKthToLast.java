@@ -59,7 +59,7 @@ public class IQ_2_2_ReturnKthToLast {
     }
 
     /**
-     * My 3rd solution using recursivity
+     * My 3rd solution using recursivity.
      */
     public MyLinkedList returnKthToLast3(MyLinkedList list, int kth) {
         MyLinkedListNode curr = list.head;
