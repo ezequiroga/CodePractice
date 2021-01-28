@@ -1,4 +1,4 @@
-package codepractice.crackingthecodinginterview.ArraysAndString;
+package codepractice.crackingthecodinginterview.IX_1.ArraysAndString;
 
 /**
  * Implement a method to perform basic string compression using the counts of

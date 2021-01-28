@@ -3,8 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package codepractice.crackingthecodinginterview.ArraysAndString;
+package codepractice.crackingthecodinginterview.IX_1.ArraysAndString;
 
+import codepractice.crackingthecodinginterview.IX_1.ArraysAndString.IQ_1_7_RotateMatrix;
 import org.junit.Test;
 import static org.junit.Assert.*;
 

@@ -1,5 +1,6 @@
-package codepractice.crackingthecodinginterview.ArraysAndString;
+package codepractice.crackingthecodinginterview.IX_1.ArraysAndString;
 
+import codepractice.crackingthecodinginterview.IX_1.ArraysAndString.IQ_1_1_IsUnique;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
