@@ -28,4 +28,27 @@ public class IQ_2_1_RemoveDups {
         }
     }
     
+    /**
+     * Solution copied from book.
+     * 
+     * Follow Up: No Buffer Allowed.
+     * 
+     * This code runs in O ( 1) space, but O ( N2) time.
+     * 
+     */
+    public void removeDupsBook(MyLinkedList list){
+        MyLinkedListNode currNode = list.head;
+        while(currNode != null){
+            MyLinkedListNode runner = currNode;
+            while(runner.next != null){
+                if (runner.next.data == currNode.data){
+                    runner.next = runner.next.next;
+                } else {
+                    runner = runner.next;
+                }
+            }
+            currNode = currNode.next; 
+        }
+    }
+    
 }
