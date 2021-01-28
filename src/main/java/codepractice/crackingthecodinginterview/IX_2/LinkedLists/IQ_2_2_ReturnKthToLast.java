@@ -1,15 +1,13 @@
 package codepractice.crackingthecodinginterview.IX_2.LinkedLists;
 
 /**
+ * Return Kth to Last: Implement an algorithm to find the kth to last element of
+ * a singly linked list.
  *
  * @author ae_qu
  */
 public class IQ_2_2_ReturnKthToLast {
     
-    /**
-     * What does I must return when kth in bigger than the list size?
-     * Is kth like an index or the number? ex: first element is 0 or 1. 
-     */
     public MyLinkedList returnKthToLast(MyLinkedList list, int kth){
         MyLinkedList finalList = new MyLinkedList();
         
