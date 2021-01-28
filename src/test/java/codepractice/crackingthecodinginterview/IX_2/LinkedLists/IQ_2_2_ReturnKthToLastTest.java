@@ -30,16 +30,13 @@ public class IQ_2_2_ReturnKthToLastTest {
         list.add(7);
         list.add(8);
         
-        int kth = 4;
+        int kth = 2;
         IQ_2_2_ReturnKthToLast instance = new IQ_2_2_ReturnKthToLast();
         MyLinkedList expResult = new MyLinkedList();
-        expResult.add(4);
-        expResult.add(5);
-        expResult.add(6);
         expResult.add(7);
         expResult.add(8);
         
-        MyLinkedList result = instance.removeKthToLast(list, kth);
+        MyLinkedList result = instance.returnKthToLast(list, kth);
         assertEquals(expResult.size, result.size);
         assertEquals(expResult.toString(), result.toString());
     }
