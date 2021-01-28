@@ -1,12 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package codepractice.crackingthecodinginterview.IX_2.LinkedLists;
 
-import org.junit.Test;
 import static org.junit.Assert.*;
+import org.junit.Test;
 
 /**
  *
@@ -37,6 +32,54 @@ public class IQ_2_2_ReturnKthToLastTest {
         expResult.add(8);
         
         MyLinkedList result = instance.returnKthToLast(list, kth);
+        assertEquals(expResult.size, result.size);
+        assertEquals(expResult.toString(), result.toString());
+    }
+
+    @Test
+    public void testRemoveKthToLast2() {
+        System.out.println("removeKthToLast2");
+        MyLinkedList list = new MyLinkedList();
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        list.add(4);
+        list.add(5);
+        list.add(6);
+        list.add(7);
+        list.add(8);
+        
+        int kth = 2;
+        IQ_2_2_ReturnKthToLast instance = new IQ_2_2_ReturnKthToLast();
+        MyLinkedList expResult = new MyLinkedList();
+        expResult.add(7);
+        expResult.add(8);
+        
+        MyLinkedList result = instance.returnKthToLast2(list, kth);
+        assertEquals(expResult.size, result.size);
+        assertEquals(expResult.toString(), result.toString());
+    }
+
+    @Test
+    public void testRemoveKthToLast3() {
+        System.out.println("removeKthToLast3");
+        MyLinkedList list = new MyLinkedList();
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        list.add(4);
+        list.add(5);
+        list.add(6);
+        list.add(7);
+        list.add(8);
+        
+        int kth = 2;
+        IQ_2_2_ReturnKthToLast instance = new IQ_2_2_ReturnKthToLast();
+        MyLinkedList expResult = new MyLinkedList();
+        expResult.add(7);
+        expResult.add(8);
+        
+        MyLinkedList result = instance.returnKthToLast3(list, kth);
         assertEquals(expResult.size, result.size);
         assertEquals(expResult.toString(), result.toString());
     }
