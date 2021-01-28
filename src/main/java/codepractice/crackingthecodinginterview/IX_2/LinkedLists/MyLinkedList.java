@@ -10,24 +10,45 @@ package codepractice.crackingthecodinginterview.IX_2.LinkedLists;
  * @author ae_qu
  */
 public class MyLinkedList {
-    
+
     MyLinkedListNode head;
     MyLinkedListNode tail;
-    
-    public MyLinkedList add(int data){
-        if (head == null){
+    int size;
+
+    public MyLinkedList() {
+        size = 0;
+    }
+
+    public MyLinkedList add(int data) {
+        if (head == null) {
             head = new MyLinkedListNode(data);
             tail = head;
+            size++;
             return this;
         }
-        
+
         MyLinkedListNode node = head;
-        while(node.next != null){
+        while (node.next != null) {
             node = node.next;
         }
         node.next = new MyLinkedListNode(data);
         tail = node.next;
-        return this;        
+        size++;
+        return this;
     }
-    
+
+    @Override
+    public String toString() {
+        MyLinkedListNode curr = head;
+        StringBuilder str = new StringBuilder();
+        while (curr != null) {
+            if (curr != head) {
+                str.append(" -> ");
+            }
+            str.append(curr.data);
+            curr = curr.next;
+        }
+        return str.toString();
+    }
+
 }
