@@ -83,5 +83,29 @@ public class IQ_2_2_ReturnKthToLastTest {
         assertEquals(expResult.size, result.size);
         assertEquals(expResult.toString(), result.toString());
     }
+
+    @Test
+    public void testRemoveKthToLastBook() {
+        System.out.println("testRemoveKthToLastBook");
+        MyLinkedList list = new MyLinkedList();
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        list.add(4);
+        list.add(5);
+        list.add(6);
+        list.add(7);
+        list.add(8);
+        
+        int kth = 2;
+        IQ_2_2_ReturnKthToLast instance = new IQ_2_2_ReturnKthToLast();
+        MyLinkedList expResult = new MyLinkedList();
+        expResult.add(7);
+        expResult.add(8);
+        
+        MyLinkedList result = instance.returnKthToLastBook(list, kth);
+        assertEquals(expResult.size, result.size);
+        assertEquals(expResult.toString(), result.toString());
+    }
     
 }
