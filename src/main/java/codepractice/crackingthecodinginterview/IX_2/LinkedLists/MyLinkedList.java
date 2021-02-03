@@ -36,6 +36,17 @@ public class MyLinkedList {
         size++;
         return this;
     }
+    
+    public MyLinkedListNode getByData(int data){
+        MyLinkedListNode curr = head;
+        while(curr != null){
+            if(curr.data == data){
+                return curr;
+            }
+            curr = curr.next;
+        }
+        return curr;
+    }
 
     @Override
     public String toString() {
