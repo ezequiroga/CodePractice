@@ -13,8 +13,8 @@ public class IQ_2_5_SumListsTest {
     }
 
     @Test
-    public void testSumList() {
-        System.out.println("sumList");
+    public void testSumListReverserOrder() {
+        System.out.println("sumListReverserOrder");
         MyLinkedList n1 = new MyLinkedList();
         n1.add(7);
         n1.add(1);
@@ -28,7 +28,7 @@ public class IQ_2_5_SumListsTest {
         expResult.add(2);
         expResult.add(1);
         expResult.add(9);
-        MyLinkedList result = instance.sumList(n1, n2);
+        MyLinkedList result = instance.sumListReverserOrder(n1, n2);
         
         System.out.println(result);
         
