@@ -34,5 +34,27 @@ public class IQ_2_5_SumListsTest {
         
         assertEquals(expResult.toString(), result.toString());
     }
+
+    @Test
+    public void testSumListForwardOrder() {
+        System.out.println("sumListForwardOrder");
+        MyLinkedList n1 = new MyLinkedList();
+        n1.add(6);
+        n1.add(1);
+        n1.add(7);
+        MyLinkedList n2 = new MyLinkedList();
+        n2.add(2);
+        n2.add(9);
+        n2.add(5);
+        IQ_2_5_SumLists instance = new IQ_2_5_SumLists();
+        MyLinkedList expResult = new MyLinkedList();
+        expResult.add(9);
+        expResult.add(1);
+        expResult.add(2);
+        MyLinkedList result = instance.sumListForwardOrder(n1, n2);
+        
+        System.out.println(result.toString());
+        assertEquals(expResult.toString(), result.toString());
+    }
     
 }

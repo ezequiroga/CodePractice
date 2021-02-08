@@ -57,4 +57,64 @@ public class IQ_2_5_SumLists {
         return result;
     }
 
+    public MyLinkedList sumListForwardOrder(MyLinkedList n1, MyLinkedList n2) {
+        MyLinkedListNode currentN1 = n1.head;
+        MyLinkedListNode currentN2 = n2.head;
+
+        MyLinkedList reutl = new MyLinkedList();
+
+        MyLinkedListNode lastNode = null;
+
+        int over = 0;
+        while (currentN1 != null && currentN2 != null) {
+            int sum = currentN1.data + currentN2.data;
+            over = 0;
+            if (sum >= 10) {
+                sum = sum - 10;
+                over++;
+
+                if (lastNode == null) {
+                    MyLinkedListNode newHead = new MyLinkedListNode();
+                    newHead.data = over;
+                    newHead.next = reutl.head;
+                    reutl.head = newHead;
+                    lastNode = reutl.head;
+                } else {
+                    lastNode.data += over;
+                }
+            }
+
+            MyLinkedListNode newNode = new MyLinkedListNode(sum);
+            if (reutl.head == null) {
+                reutl.head = newNode;
+            } else {
+                lastNode.next = newNode;
+            }
+            lastNode = newNode;
+
+            //crear nuevo nodo
+            currentN1 = currentN1.next;
+            currentN2 = currentN2.next;
+        }
+        
+//        while(currentN1 != null){
+//            int sum = currentN1.data;
+//            if (sum >= 10){
+//                
+//            }
+//            
+//            currentN1 = currentN1.next;
+//        }
+//        
+//        while(currentN2 != null){
+//            int sum = currentN2.data;
+//            if (sum >= 10){
+//                
+//            }
+//            currentN2 = currentN2.next;
+//        }
+
+        return reutl;
+    }
+
 }
