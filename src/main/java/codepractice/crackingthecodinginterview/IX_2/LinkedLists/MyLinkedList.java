@@ -37,6 +37,22 @@ public class MyLinkedList {
         return this;
     }
     
+    public MyLinkedList add(MyLinkedListNode node){
+        if(head == null ){
+            head = node;
+            tail = head;
+            size++;
+            return this;
+        }
+        
+        tail.next = node;
+        tail = node;
+        size++;
+        
+        return this;
+        
+    }
+    
     public MyLinkedListNode getByData(int data){
         MyLinkedListNode curr = head;
         while(curr != null){
