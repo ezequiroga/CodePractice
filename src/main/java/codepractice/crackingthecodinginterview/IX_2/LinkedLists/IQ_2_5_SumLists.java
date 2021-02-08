@@ -22,8 +22,43 @@ package codepractice.crackingthecodinginterview.IX_2.LinkedLists;
 public class IQ_2_5_SumLists {
     
     public MyLinkedList sumList(MyLinkedList n1, MyLinkedList n2){
+        MyLinkedListNode currentN1 = n1.head;
+        MyLinkedListNode currentN2 = n2.head;
         
-        return null;
+        MyLinkedList result = new MyLinkedList();
+        
+        int over = 0;
+        while (currentN1 != null && currentN2 != null){
+            int sum = currentN1.data + currentN2.data + over;
+            over = 0;
+            if (sum >= 10) {
+                over++;
+                sum = sum - 10;
+            }
+            result.add(sum);
+            currentN1 = currentN1.next;
+            currentN2 = currentN2.next;
+        }
+        
+        while (currentN1 != null){
+            int sum = currentN1.data + over;
+            over = 0;
+            result.add(sum);
+            currentN1 = currentN1.next;
+        }
+        
+        while (currentN2 != null){
+            int sum = currentN2.data + over;
+            over = 0;
+            result.add(sum);
+            currentN2 = currentN2.next;            
+        }
+        
+        if (over > 0){
+            result.add(over);
+        }
+        
+        return result;
     }
     
 }
