@@ -14,6 +14,8 @@ public class MyLinkedListNode {
     public int data;
     public MyLinkedListNode next;
 
+    public MyLinkedListNode(){}
+    
     public MyLinkedListNode(int data) {
         this.data = data;
     }
