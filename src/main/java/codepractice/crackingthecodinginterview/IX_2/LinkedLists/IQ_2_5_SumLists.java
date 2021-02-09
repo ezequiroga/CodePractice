@@ -57,6 +57,15 @@ public class IQ_2_5_SumLists {
         return result;
     }
 
+    /**
+     * For this case, in the solution of the book first it takes the length of
+     * both list and use an auxiliary function to fulfill the shortest list with
+     * zeros.
+     * 
+     * @param n1
+     * @param n2
+     * @return 
+     */
     public MyLinkedList sumListForwardOrder(MyLinkedList n1, MyLinkedList n2) {
         MyLinkedListNode currentN1 = n1.head;
         MyLinkedListNode currentN2 = n2.head;

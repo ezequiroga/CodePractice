@@ -53,6 +53,9 @@ public class IQ_2_5_SumListsTest {
         expResult.add(2);
         MyLinkedList result = instance.sumListForwardOrder(n1, n2);
         
+        System.out.println("12/10: " + 12/10);
+        System.out.println("12%10: " + 12%10);
+        
         System.out.println(result.toString());
         assertEquals(expResult.toString(), result.toString());
     }
