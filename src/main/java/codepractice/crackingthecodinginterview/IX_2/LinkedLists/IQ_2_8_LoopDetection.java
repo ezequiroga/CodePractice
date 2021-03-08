@@ -1,5 +1,7 @@
 package codepractice.crackingthecodinginterview.IX_2.LinkedLists;
 
+import java.util.HashSet;
+
 /**
  * Given a circular linked list, implement an algorithm that returns the node at
  * the beginning of the loop.
@@ -18,7 +20,22 @@ package codepractice.crackingthecodinginterview.IX_2.LinkedLists;
 public class IQ_2_8_LoopDetection {
     
     public MyLinkedListNode loopDetection(MyLinkedList list) {
-        return null;
+        MyLinkedListNode current = list.head;
+
+        MyLinkedListNode repeatedNode = null;
+        
+        HashSet<MyLinkedListNode> prevNodes = new HashSet<>();
+        
+        while (current != null){
+            if (prevNodes.contains(current)){
+                repeatedNode = current;
+                break;
+            } else {
+                prevNodes.add(current);
+            }
+            current = current.next;
+        }
+       return repeatedNode;
     }
     
 }
