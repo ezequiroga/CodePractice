@@ -15,6 +15,11 @@ import java.util.HashSet;
  * 
  * Output: C
  *
+ * ****
+ * Review the solution in the book. It is very important to understand the
+ * implemented algorithm.
+ * ****
+ * 
  * @author ae_qu
  */
 public class IQ_2_8_LoopDetection {
